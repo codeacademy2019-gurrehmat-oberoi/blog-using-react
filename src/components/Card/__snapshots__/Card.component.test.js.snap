@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render a card 1`] = `
+<div
+  className="Card"
+>
+  <img
+    alt=""
+    className="CardImage"
+    src="abstract.png"
+  />
+  <div
+    className="CardBody"
+  >
+    <div
+      className="meta"
+    >
+      <span
+        className="date"
+      >
+        2nd Januray, 2018
+      </span>
+      <span
+        className="readTime"
+      >
+        2 mins
+      </span>
+    </div>
+    <h1>
+      The future of abstract art and the culture ...
+    </h1>
+    <p>
+      Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your...
+    </p>
+    <hr />
+  </div>
+  <div
+    className="CardFooter"
+  >
+    <div
+      className="left"
+    >
+      <img
+        alt=""
+        className="icon clap"
+        src={
+          Object {
+            "ReactComponent": [Function],
+            "__esModule": true,
+            "default": "clapping.svg",
+          }
+        }
+      />
+      <span
+        className="clapCount"
+      >
+         
+        10
+      </span>
+    </div>
+    <div
+      className="right"
+    >
+      <img
+        alt=""
+        className="icon heart"
+        src={
+          Object {
+            "ReactComponent": [Function],
+            "__esModule": true,
+            "default": "heart-black.svg",
+          }
+        }
+      />
+    </div>
+  </div>
+  <button
+    className="CreatePostButton"
+    onClick={[Function]}
+    type="button"
+  >
+    Create Post
+  </button>
+</div>
+`;

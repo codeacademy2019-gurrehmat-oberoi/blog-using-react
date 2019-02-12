@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardImage should render a CardImage 1`] = `
+<img
+  alt=""
+  className="CardImage"
+  src="abstract.png"
+/>
+`;

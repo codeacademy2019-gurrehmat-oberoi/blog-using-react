@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardFooter should render a Card Footer 1`] = `
+<div
+  className="CardFooter"
+>
+  <div
+    className="left"
+  >
+    <img
+      alt=""
+      className="icon clap"
+      src={
+        Object {
+          "ReactComponent": [Function],
+          "__esModule": true,
+          "default": "clapping.svg",
+        }
+      }
+    />
+    <span
+      className="clapCount"
+    >
+       
+      10
+    </span>
+  </div>
+  <div
+    className="right"
+  >
+    <img
+      alt=""
+      className="icon heart"
+      src={
+        Object {
+          "ReactComponent": [Function],
+          "__esModule": true,
+          "default": "heart-black.svg",
+        }
+      }
+    />
+  </div>
+</div>
+`;

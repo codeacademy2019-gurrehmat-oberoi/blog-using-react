@@ -3,20 +3,25 @@ import CardImage from '../CardImage/CardImage.component';
 import CardBody from '../CardBody/CardBody.component';
 import CardFooter from '../CardFooter/CardFooter.component';
 import './Card.css'
-const axios = require('axios');
+// const axios = require('axios');
 
 class Card extends Component {
   state = {
     post: this.props.post
   };
-  componentDidMount(){
-    const externalDataPromise = axios.get('https://api.myjson.com/bins/hc5ye');
-    externalDataPromise.then((response) => {
-      this.setState({
-        post: response.data[3],
-      });
-    });
-  }
+
+  handleClapAction = () => {
+    let newPost = this.state.post;
+    newPost.claps = newPost.claps+1;
+    this.setState({post:newPost});
+  };
+
+  handleLikeAction = (likeState) => {
+    let newPost = this.state.post;
+    newPost.liked = !(newPost.liked);
+    this.setState({post:newPost});
+  };
+
   render() {
     console.log(this.state.post);
     const post = this.state.post;
@@ -32,6 +37,8 @@ class Card extends Component {
         <CardFooter
           claps = {post.claps}
           liked = {post.liked}
+          onClapAction = {this.handleClapAction}
+          onLikeAction = {this.handleLikeAction}
         />
         <button type='button' className='CreatePostButton' onClick={()=>(window.location.href = 'post')}>Create Post</button>
       </div>

@@ -6,6 +6,7 @@ import './index.css';
 // import CreatePost from './components/CreatePost/CreatePost.component';
 import * as serviceWorker from './serviceWorker';
 import Routing from './Routes'
+// import Header from './components/Header/Header.component';
 
 ReactDOM.render(<Routing />, document.getElementById('root'));
 

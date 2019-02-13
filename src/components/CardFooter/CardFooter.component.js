@@ -8,11 +8,11 @@ const CardFooter = (props) => {
   return (
     <div className='CardFooter'>
       <div className='left'>
-        <img src={require('../../Icons/clapping.svg')} className = 'icon clap' alt='' />
+        <img src={require('../../Icons/clapping.svg')} className = 'icon clap' alt='' onClick = {()=>props.onClapAction()}/>
         <span className='clapCount'> {claps}</span>
       </div>
       <div className='right'>
-        <img src= {require(`../../Icons/heart-${ liked ? 'red':'black'}.svg`)} className = "icon heart" alt= ''/>
+        <img src= {require(`../../Icons/heart-${ liked ? 'red':'black'}.svg`)} className = "icon heart" alt= '' onClick = {() => props.onLikeAction()}/>
       </div>
     </div>
   );

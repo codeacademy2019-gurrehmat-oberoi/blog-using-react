@@ -10,6 +10,7 @@ exports[`CardFooter should render a Card Footer 1`] = `
     <img
       alt=""
       className="icon clap"
+      onClick={[Function]}
       src={
         Object {
           "ReactComponent": [Function],
@@ -31,6 +32,7 @@ exports[`CardFooter should render a Card Footer 1`] = `
     <img
       alt=""
       className="icon heart"
+      onClick={[Function]}
       src={
         Object {
           "ReactComponent": [Function],

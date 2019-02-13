@@ -1,18 +1,18 @@
 import React from 'react'
-import Card from '../components/Card/Card.component'
+import AllCards from '../components/AllCards/AllCards.component'
 import CreatePost from '../components/CreatePost/CreatePost.component'
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
+import App from '../components/App/App.component';
 
 const Routing = () => (
   <Router>
     <div>
-      <Route exact path='/' render={()=>(<Card />)} />
-      <Route exact path='/post' render={()=>(<CreatePost />)} />
+      <Route exact path='/' component={()=>(<App />)} />
+      <Route exact path='/post' component={()=>(<CreatePost />)} />
     </div>
   </Router>
-)
+);
 export default Routing;
